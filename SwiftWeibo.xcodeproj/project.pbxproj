@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2590C99D1CA52C2A008A1BCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2590C99C1CA52C2A008A1BCF /* AppDelegate.swift */; };
-		2590C99F1CA52C2A008A1BCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2590C99E1CA52C2A008A1BCF /* ViewController.swift */; };
 		2590C9B21CA52C2A008A1BCF /* SwiftWeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2590C9B11CA52C2A008A1BCF /* SwiftWeiboTests.swift */; };
 		2590C9BD1CA52C2A008A1BCF /* SwiftWeiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2590C9BC1CA52C2A008A1BCF /* SwiftWeiboUITests.swift */; };
 		2590C9CB1CA531A7008A1BCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2590C9CA1CA531A7008A1BCF /* Assets.xcassets */; };
@@ -20,6 +19,9 @@
 		25ED3B9B1CA5461B00CA78FA /* YJProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ED3B9A1CA5461B00CA78FA /* YJProfileTableViewController.swift */; };
 		9428524B1CA7AEAC001D738D /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 942852491CA7AEAC001D738D /* MainVCSettings.json */; };
 		9428524C1CA7AEAC001D738D /* YJNullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9428524A1CA7AEAC001D738D /* YJNullViewController.swift */; };
+		9428524E1CA7C48C001D738D /* YJBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9428524D1CA7C48C001D738D /* YJBaseTableViewController.swift */; };
+		942852501CA7C69B001D738D /* YJVistorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9428524F1CA7C69B001D738D /* YJVistorView.swift */; };
+		942852521CA7CA99001D738D /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942852511CA7CA99001D738D /* UIView+AutoLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +44,6 @@
 /* Begin PBXFileReference section */
 		2590C9991CA52C2A008A1BCF /* SwiftWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2590C99C1CA52C2A008A1BCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2590C99E1CA52C2A008A1BCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2590C9A81CA52C2A008A1BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2590C9AD1CA52C2A008A1BCF /* SwiftWeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftWeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2590C9B11CA52C2A008A1BCF /* SwiftWeiboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWeiboTests.swift; sourceTree = "<group>"; };
@@ -59,6 +60,9 @@
 		25ED3B9A1CA5461B00CA78FA /* YJProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJProfileTableViewController.swift; sourceTree = "<group>"; };
 		942852491CA7AEAC001D738D /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		9428524A1CA7AEAC001D738D /* YJNullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJNullViewController.swift; sourceTree = "<group>"; };
+		9428524D1CA7C48C001D738D /* YJBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJBaseTableViewController.swift; sourceTree = "<group>"; };
+		9428524F1CA7C69B001D738D /* YJVistorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJVistorView.swift; sourceTree = "<group>"; };
+		942852511CA7CA99001D738D /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +115,6 @@
 			children = (
 				25ED3B731CA5455C00CA78FA /* Classes */,
 				2590C99C1CA52C2A008A1BCF /* AppDelegate.swift */,
-				2590C99E1CA52C2A008A1BCF /* ViewController.swift */,
 				2590C9A81CA52C2A008A1BCF /* Info.plist */,
 				2590C9CA1CA531A7008A1BCF /* Assets.xcassets */,
 			);
@@ -261,6 +264,7 @@
 			children = (
 				942852481CA7AEAC001D738D /* Resource */,
 				25ED3B901CA5458600CA78FA /* YJMainrController.swift */,
+				9428524D1CA7C48C001D738D /* YJBaseTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -275,6 +279,7 @@
 		25ED3B831CA5455C00CA78FA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9428524F1CA7C69B001D738D /* YJVistorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -346,32 +351,9 @@
 		25ED3B8C1CA5455C00CA78FA /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				25ED3B8D1CA5455C00CA78FA /* Controller */,
-				25ED3B8E1CA5455C00CA78FA /* Model */,
-				25ED3B8F1CA5455C00CA78FA /* View */,
+				942852511CA7CA99001D738D /* UIView+AutoLayout.swift */,
 			);
 			path = Tools;
-			sourceTree = "<group>";
-		};
-		25ED3B8D1CA5455C00CA78FA /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		25ED3B8E1CA5455C00CA78FA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		25ED3B8F1CA5455C00CA78FA /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		942852481CA7AEAC001D738D /* Resource */ = {
@@ -514,13 +496,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				25ED3B9B1CA5461B00CA78FA /* YJProfileTableViewController.swift in Sources */,
-				2590C99F1CA52C2A008A1BCF /* ViewController.swift in Sources */,
 				25ED3B931CA545D900CA78FA /* YJHomeTableViewController.swift in Sources */,
+				9428524E1CA7C48C001D738D /* YJBaseTableViewController.swift in Sources */,
 				25ED3B911CA5458600CA78FA /* YJMainrController.swift in Sources */,
 				9428524C1CA7AEAC001D738D /* YJNullViewController.swift in Sources */,
 				25ED3B991CA5461200CA78FA /* YJMessageTableViewController.swift in Sources */,
 				2590C99D1CA52C2A008A1BCF /* AppDelegate.swift in Sources */,
 				25ED3B951CA545FB00CA78FA /* YJDiscoverTableViewController.swift in Sources */,
+				942852501CA7C69B001D738D /* YJVistorView.swift in Sources */,
+				942852521CA7CA99001D738D /* UIView+AutoLayout.swift in Sources */,
 				25ED3B971CA5460700CA78FA /* YJCommonTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

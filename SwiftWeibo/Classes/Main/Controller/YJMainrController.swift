@@ -32,7 +32,7 @@ class YJMainrController: UITabBarController {
      * 按钮点击使劲的调用是由 运行循环 监听并且以 消息机制 传递的，因此，按钮监听函数不能设置为private
      */
     func composeBtnClick() {
-        print("----")
+        
     }
     
     /**

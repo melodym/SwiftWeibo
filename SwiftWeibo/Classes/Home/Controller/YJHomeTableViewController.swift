@@ -8,11 +8,11 @@
 
 import UIKit
 
-class YJHomeTableViewController: UITableViewController {
+class YJHomeTableViewController: YJBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = UIColor.whiteColor()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
