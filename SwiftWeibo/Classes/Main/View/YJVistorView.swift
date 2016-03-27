@@ -8,7 +8,37 @@
 
 import UIKit
 
+//swift如何定义协议
+protocol YJVistorViewDelegate : NSObjectProtocol {
+    //点击登录按钮之后的回调
+    func loginBtnDidClick()
+    //点击注册按钮之后的回调
+    func registerBtnDidClick()
+    
+}
+
 class YJVistorView: UIView {
+    //定义一个属性保存代理对象。一定使用weak
+    weak var delegate: YJVistorViewDelegate?
+    /**
+     初始化设置未登录界面
+     
+     - parameter isHome:    是否是主页
+     - parameter imageName: 需要展示的图标
+     - parameter message:   文本
+     */
+    func setupVistorViewInfo(isHome: Bool, imageName: String, message: String) {
+        //如果不是首页就隐藏转盘
+        iconView.hidden = !isHome
+        //修改中间图标
+        homeIcon.image = UIImage(named: imageName)
+        //修改文本
+        messasgeLabel.text = message
+        
+        if isHome {
+            startAnimation()
+        }
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -69,6 +99,7 @@ class YJVistorView: UIView {
         button.setTitleColor(UIColor.lightGrayColor(), forState: UIControlState.Normal)
         button.setTitle("登录", forState: UIControlState.Normal)
         button.setBackgroundImage(UIImage(named: "common_button_white_disable"), forState: UIControlState.Normal)
+        button.addTarget(self, action: "loginBtnClick", forControlEvents: UIControlEvents.TouchUpInside)
         return button
     }()
     //注册按钮
@@ -77,11 +108,35 @@ class YJVistorView: UIView {
         button.setTitleColor(UIColor.orangeColor(), forState: UIControlState.Normal)
         button.setTitle("注册", forState: UIControlState.Normal)
         button.setBackgroundImage(UIImage(named: "common_button_white_disable"), forState: UIControlState.Normal)
+        button.addTarget(self, action: "registerBtnClick", forControlEvents: UIControlEvents.TouchUpInside)
         return button
     }()
+    
+    func loginBtnClick() {
+        delegate?.loginBtnDidClick()
+    }
+    
+    func registerBtnClick() {
+        delegate?.registerBtnDidClick()
+    }
+    
     private lazy var maskBGView: UIImageView = {
         let iv = UIImageView(image: UIImage(named: "visitordiscover_feed_mask_smallicon"))
         return iv
     }()
     
+    private func startAnimation() {
+        //创建动画
+        let anim = CABasicAnimation(keyPath: "transform.rotation")
+        //设置动画属性
+        anim.toValue = 2 * M_PI
+        anim.duration = 20
+        anim.repeatCount = MAXFLOAT
+        //默认为YES，代表动画完成就移除
+        anim.removedOnCompletion = false
+        
+        //将动画添加到图层上
+        iconView.layer.addAnimation(anim, forKey: nil)
+        
+    }
 }

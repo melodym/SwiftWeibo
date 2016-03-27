@@ -13,11 +13,10 @@ class YJHomeTableViewController: YJBaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.whiteColor()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        //如果没有登录,设置未登录的信息
+        if !userLogin {
+            visitorView?.setupVistorViewInfo(true, imageName: "visitordiscover_feed_image_house", message: "关注一些人，回这里看看有什么惊喜")
+        }
     }
 
     override func didReceiveMemoryWarning() {

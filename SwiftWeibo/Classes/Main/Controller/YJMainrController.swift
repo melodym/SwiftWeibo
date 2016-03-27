@@ -14,7 +14,7 @@ class YJMainrController: UITabBarController {
         super.viewDidLoad()
         //设置当前控制器对应tabbar的颜色
         //注意：在iOS7之前如果设置了tintColor只有文字会变，图片不会变
-        tabBar.tintColor = UIColor.orangeColor()
+//        tabBar.tintColor = UIColor.orangeColor()
         //添加子控制器
         addChildViewControllers()
         //从iOS7之后就不推荐在viewDidLoad中设置frame
