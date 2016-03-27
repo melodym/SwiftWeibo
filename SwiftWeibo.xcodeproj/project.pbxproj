@@ -18,6 +18,8 @@
 		25ED3B971CA5460700CA78FA /* YJCommonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ED3B961CA5460700CA78FA /* YJCommonTableViewController.swift */; };
 		25ED3B991CA5461200CA78FA /* YJMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ED3B981CA5461200CA78FA /* YJMessageTableViewController.swift */; };
 		25ED3B9B1CA5461B00CA78FA /* YJProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ED3B9A1CA5461B00CA78FA /* YJProfileTableViewController.swift */; };
+		9428524B1CA7AEAC001D738D /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 942852491CA7AEAC001D738D /* MainVCSettings.json */; };
+		9428524C1CA7AEAC001D738D /* YJNullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9428524A1CA7AEAC001D738D /* YJNullViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		25ED3B961CA5460700CA78FA /* YJCommonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJCommonTableViewController.swift; sourceTree = "<group>"; };
 		25ED3B981CA5461200CA78FA /* YJMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJMessageTableViewController.swift; sourceTree = "<group>"; };
 		25ED3B9A1CA5461B00CA78FA /* YJProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJProfileTableViewController.swift; sourceTree = "<group>"; };
+		942852491CA7AEAC001D738D /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		9428524A1CA7AEAC001D738D /* YJNullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJNullViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +259,7 @@
 		25ED3B811CA5455C00CA78FA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				942852481CA7AEAC001D738D /* Resource */,
 				25ED3B901CA5458600CA78FA /* YJMainrController.swift */,
 			);
 			path = Controller;
@@ -369,6 +374,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		942852481CA7AEAC001D738D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				942852491CA7AEAC001D738D /* MainVCSettings.json */,
+				9428524A1CA7AEAC001D738D /* YJNullViewController.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -473,6 +487,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9428524B1CA7AEAC001D738D /* MainVCSettings.json in Resources */,
 				2590C9CB1CA531A7008A1BCF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +517,7 @@
 				2590C99F1CA52C2A008A1BCF /* ViewController.swift in Sources */,
 				25ED3B931CA545D900CA78FA /* YJHomeTableViewController.swift in Sources */,
 				25ED3B911CA5458600CA78FA /* YJMainrController.swift in Sources */,
+				9428524C1CA7AEAC001D738D /* YJNullViewController.swift in Sources */,
 				25ED3B991CA5461200CA78FA /* YJMessageTableViewController.swift in Sources */,
 				2590C99D1CA52C2A008A1BCF /* AppDelegate.swift in Sources */,
 				25ED3B951CA545FB00CA78FA /* YJDiscoverTableViewController.swift in Sources */,
